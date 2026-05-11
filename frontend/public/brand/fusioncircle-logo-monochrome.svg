@@ -1,0 +1,18 @@
+<svg width="860" height="240" viewBox="0 0 860 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="860" height="240" rx="44" fill="#FFFFFF"/>
+  <g transform="translate(72 72)">
+    <rect x="10" y="10" width="76" height="76" rx="22" fill="#FFFFFF" stroke="#0F172A" stroke-opacity="0.12"/>
+    <circle cx="48" cy="48" r="25" stroke="#0F172A" stroke-width="5.5" stroke-linecap="round" stroke-dasharray="112 44" transform="rotate(-42 48 48)"/>
+    <circle cx="48" cy="48" r="17.5" stroke="#0F172A" stroke-opacity="0.22" stroke-width="2" stroke-dasharray="42 22" transform="rotate(20 48 48)"/>
+    <circle cx="68" cy="28" r="3.5" fill="#0F172A"/>
+    <circle cx="31" cy="66" r="3" fill="#0F172A"/>
+    <path d="M34 30.5H55.5M34 46.75H50.5M34 30.5V65.5" stroke="#0F172A" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M61.5 31.5C56.8 28.8 52.1 28 48.6 28C37.7 28 29 36.9 29 48C29 59.1 37.7 68 48.6 68C52.2 68 57 67.1 61.5 64.4" stroke="#0F172A" stroke-width="5.5" stroke-linecap="round"/>
+  </g>
+  <text x="196" y="120" fill="#0F172A" font-family="Outfit, Arial, sans-serif" font-size="64" font-weight="600" letter-spacing="-1.6">
+    FusionCircle
+  </text>
+  <text x="200" y="158" fill="#0F172A" fill-opacity="0.72" font-family="Manrope, Arial, sans-serif" font-size="22" font-weight="600" letter-spacing="6">
+    TECH
+  </text>
+</svg>

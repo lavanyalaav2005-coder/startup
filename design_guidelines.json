@@ -1,0 +1,166 @@
+{
+  "project_name": "FusionCircle Tech",
+  "theme": "Dark-first (with Light mode toggle)",
+  "archetype": "Archetype 4 (Swiss & High-Contrast) with Apple-level Premium Glassmorphism twist",
+  "design_philosophy": "Authoritative, cutting-edge, transparent, premium. Focus on stark contrasts, crystal glassmorphism for floating elements, and a cinematic tech aesthetic. Avoid typical SaaS templates; use tension, generous spacing, and deep optical clarity.",
+  "typography": {
+    "fonts": {
+      "headings": "Outfit, sans-serif",
+      "body": "Manrope, sans-serif",
+      "monospace": "JetBrains Mono, monospace"
+    },
+    "scale": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl tracking-tighter font-light",
+      "h2": "text-3xl sm:text-4xl tracking-tight font-medium",
+      "h3": "text-xl sm:text-2xl tracking-tight font-medium",
+      "h4": "text-lg sm:text-xl font-medium",
+      "body": "text-base leading-relaxed",
+      "small": "text-sm text-muted-foreground",
+      "overline": "text-xs tracking-[0.2em] uppercase font-bold text-accent"
+    }
+  },
+  "color_palette": {
+    "dark": {
+      "background": "#050505",
+      "surface": "#0A0A0A",
+      "surface_glass": "rgba(255, 255, 255, 0.03)",
+      "border": "rgba(255, 255, 255, 0.1)",
+      "text_primary": "#FFFFFF",
+      "text_secondary": "#A1A1AA",
+      "accent": "#00F0FF",
+      "accent_glow": "rgba(0, 240, 255, 0.5)",
+      "secondary_accent": "#4F46E5",
+      "success": "#10B981",
+      "warning": "#F59E0B",
+      "danger": "#EF4444"
+    },
+    "light": {
+      "background": "#F8FAFC",
+      "surface": "#FFFFFF",
+      "surface_glass": "rgba(0, 0, 0, 0.03)",
+      "border": "rgba(0, 0, 0, 0.1)",
+      "text_primary": "#0F172A",
+      "text_secondary": "#64748B",
+      "accent": "#0055FF",
+      "accent_glow": "rgba(0, 85, 255, 0.3)",
+      "secondary_accent": "#4F46E5",
+      "success": "#059669",
+      "warning": "#D97706",
+      "danger": "#DC2626"
+    }
+  },
+  "surfaces_and_materials": {
+    "glassmorphism": {
+      "description": "Apple-level crystal clarity used for Navbars, Floating Chatbots, and Modal overlays.",
+      "classes": "backdrop-blur-2xl bg-white/5 dark:bg-black/40 border border-white/20 dark:border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.12)]"
+    },
+    "neumorphism": {
+      "description": "Tactile buttons and widget cards. Used sparingly.",
+      "classes": "shadow-[inset_0_1px_1px_rgba(255,255,255,0.1),0_4px_6px_rgba(0,0,0,0.2)]"
+    },
+    "tracing_beam_card": {
+      "description": "Service cards featuring a glowing gradient border effect on hover.",
+      "classes": "relative overflow-hidden group border border-white/10 bg-black/50 hover:border-accent/50 transition-colors duration-500"
+    }
+  },
+  "spacing_and_layout": {
+    "container_padding": "px-6 md:px-12 lg:px-24",
+    "section_spacing": "py-24 md:py-32",
+    "grid_bento": "grid grid-cols-1 md:grid-cols-8 lg:grid-cols-12 gap-8 lg:gap-12",
+    "grid_dashboard": "grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6",
+    "border_radius": {
+      "sm": "rounded-sm",
+      "md": "rounded-md",
+      "lg": "rounded-2xl",
+      "full": "rounded-full"
+    }
+  },
+  "components": {
+    "navigation": {
+      "style": "Sticky, glassmorphism header. Must contain Logo, 3-5 links, Theme Toggle, and primary CTA. Mobile must use a sleek slide-out menu.",
+      "z_index": "z-50"
+    },
+    "hero": {
+      "layout": "Centered or asymmetric split. Must use hero_mesh_bg as a background layer with a dark overlay (bg-black/40) for text legibility.",
+      "elements": "H1, Overline, subheadline, Primary CTA (Glow), Secondary CTA (Outline)."
+    },
+    "buttons": {
+      "primary": "bg-accent text-black font-semibold px-8 py-3 rounded-full hover:bg-white transition-all shadow-[0_0_20px_rgba(0,240,255,0.4)] hover:shadow-[0_0_30px_rgba(255,255,255,0.6)]",
+      "secondary": "bg-transparent border border-white/20 text-white font-medium px-8 py-3 rounded-full hover:bg-white/10 transition-all",
+      "ghost": "hover:bg-white/5 text-muted-foreground hover:text-white transition-all"
+    },
+    "service_cards": {
+      "layout": "Grid Bento layout. Cards must have hover state lifting slightly (-translate-y-1) and exposing a subtle inner glow."
+    },
+    "dashboard_cards": {
+      "style": "Control Room layout. Flat background, 1px subtle border, no shadow by default. Hover adds shadow-lg and border darkens."
+    },
+    "floating_chatbot": {
+      "style": "Bottom-right fixed position. Glassmorphism orb with pulse animation. Expands into a crystal-clear chat window on click."
+    }
+  },
+  "animations": {
+    "page_transitions": "Fade and slight slide-up (framer-motion).",
+    "scroll_reveal": "Elements fade in and translate y up by 20px when in view.",
+    "hover_states": "Buttons and links must have explicit hover colors. Service cards must have a 0.5s ease-out transition on hover.",
+    "particles": "Use @tsparticles/react for a subtle network mesh in the hero section."
+  },
+  "media_assets": {
+    "hero_background": {
+      "url": "https://static.prod-images.emergentagent.com/jobs/9b52b19f-af98-4daf-8e66-07af33f330a6/images/bbfab8c54078f74383c8459b29b6043c77ac589b8cfe4f80f763b1cd60687207.png",
+      "description": "Abstract 3D network mesh background. Use in Hero section.",
+      "usage": "Cover image with black/40 to black/60 overlay to ensure text contrast."
+    },
+    "glassmorphism_texture": {
+      "url": "https://static.prod-images.emergentagent.com/jobs/9b52b19f-af98-4daf-8e66-07af33f330a6/images/04cfd577af524568530a94a12479bac0525e5854674e11504252109d574a4a5e.png",
+      "description": "Frosted glass tech glow.",
+      "usage": "Background for About or Contact sections."
+    },
+    "ai_services_bg": {
+      "url": "https://static.prod-images.emergentagent.com/jobs/9b52b19f-af98-4daf-8e66-07af33f330a6/images/1d06e5b10e33acf80bcc83a430d139a0ab60808ed717fbe5415e9ef2bb2fff72.png",
+      "description": "Glowing neural pathways.",
+      "usage": "Background for Services showcase."
+    },
+    "client_logos_bg": {
+      "url": "https://static.prod-images.emergentagent.com/jobs/9b52b19f-af98-4daf-8e66-07af33f330a6/images/75bb5fbc541e49166b909111e21a45333b921734b6a410d41725b7961eb33e73.png",
+      "description": "Abstract logo representation.",
+      "usage": "Use as a placeholder or background in the trusted by/logos section."
+    },
+    "office_architecture": {
+      "url": "https://images.unsplash.com/photo-1714601344981-75e003bc5d18?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwzfHxtb2Rlcm4lMjBnbGFzcyUyMG9mZmljZSUyMGFyY2hpdGVjdHVyZXxlbnwwfHx8fDE3Nzc4OTg4NjJ8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Modern tall glass building.",
+      "usage": "About section imagery."
+    },
+    "team_collaboration": {
+      "url": "https://images.unsplash.com/photo-1573165706511-3ffde6ef1fe3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzOTB8MHwxfHNlYXJjaHwzfHx0ZWNoJTIwdGVhbSUyMGNvbGxhYm9yYXRpb258ZW58MHx8fHwxNzc3ODk4ODYzfDA&ixlib=rb-4.1.0&q=85",
+      "description": "Tech team working together.",
+      "usage": "About section or Careers/Culture block."
+    }
+  },
+  "required_libraries": [
+    "framer-motion",
+    "lucide-react",
+    "recharts",
+    "@tsparticles/react",
+    "@tsparticles/engine",
+    "clsx",
+    "tailwind-merge",
+    "next-themes"
+  ],
+  "accessibility_and_testing": {
+    "testing": "All interactive elements (buttons, inputs, links, tabs) MUST include a 'data-testid' attribute (e.g., data-testid='hero-cta-button').",
+    "contrast": "Ensure minimum 4.5:1 text contrast. Use text shadows if text is placed over images.",
+    "hover_focus": "Explicit hover and focus states must be defined for all interactive elements."
+  },
+  "instructions_to_main_agent": [
+    "1. Setup Tailwind with the color palette provided. Configure Dark mode.",
+    "2. Implement a global Layout with a glassmorphism sticky header and a massive dark footer.",
+    "3. Build the Home page with tsparticles in the hero section overlaying the hero_background image.",
+    "4. Build the Services page using the Tracing Beam card style and Grid Bento layout.",
+    "5. Build the About and Contact pages using the provided Unsplash and generated images.",
+    "6. Build the Dashboards (Client & Admin) using a denser 'Control Room' grid layout, avoiding heavily styled components in favor of clean, stark lines (1px borders, solid backgrounds).",
+    "7. Implement the floating AI chatbot using framer-motion for pulse animations and state toggling.",
+    "8. Ensure every form input uses Shadcn components customized to match the high-end dark theme.",
+    "9. Inject data-testid into all interactive components."
+  ]
+}
